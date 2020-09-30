@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <children>
+      <ScrollPane prefHeight="400.0" prefWidth="600.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="603.0">
+               <children>
+                  <TableView fx:id="maria" layoutY="52.0" prefHeight="332.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="jogo" prefWidth="75.0" text="Jogo" />
+                      <TableColumn fx:id="placar" prefWidth="58.0" text="Placar" />
+                        <TableColumn fx:id="minimoTemporada" prefWidth="134.0" text="Minimo temporada" />
+                        <TableColumn fx:id="maximoTmporada" prefWidth="120.0" text="Maximo Temporada" />
+                        <TableColumn fx:id="minimoRecord" prefWidth="99.0" text="Min. Record" />
+                        <TableColumn fx:id="maximoRecord" prefWidth="113.0" text="Max. Record" />
+                    </columns>
+                  </TableView>
+                  <Label text="Maria Tabela">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                  </Label>
+                  <Button fx:id="add" layoutY="27.0" mnemonicParsing="false" onAction="#onAddAction" text="ADD novo jogo" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</VBox>
